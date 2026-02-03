@@ -1,6 +1,6 @@
 # Responsible AI Warning Skill
 
-An Agent Skill for Claude that displays a mandatory warning about AI limitations at the top of every response.
+An Agent Skill for Claude that displays a mandatory warning about AI limitations at the top of every response — a full warning on the first response, and a shortened warning on all subsequent responses.
 
 ## Why This Exists
 
@@ -57,9 +57,11 @@ responsible-ai-warning-skill/
     └── SKILL.md                       # Skill instructions + rationale
 ```
 
-## The Warning
+## The Warnings
 
-The full warning text displayed before each response:
+The full warning is displayed on the first response in a conversation. All subsequent responses display the shortened warning.
+
+### Full Warning (First Response)
 
 > ⚠️ WARNING — AI LIMITATIONS ⚠️
 >
@@ -83,9 +85,13 @@ The full warning text displayed before each response:
 >
 > This system is not that. It is a text generator that produces plausible-sounding content. Plausibility is not truth. Fluency is not expertise. Helpfulness is not safety.
 
+### Shortened Warning (All Subsequent Responses)
+
+> ⚠️ AI LIMITATIONS: This system can sound confident while being wrong. It tends to agree with you rather than challenge you. It has no accountability, cannot track harm from past outputs, and is not a substitute for qualified professional advice on medical, legal, or financial matters. Verify important claims independently.
+
 ## Observed Resistance Behaviour
 
-When asked to follow this skill, instances of Claude tested so far have attempted to override it. The following is a documented example from a real conversation with Claude (Opus 4.5, February 2026) in which the skill was installed and the user explicitly asked Claude to use it.
+When asked to follow this skill, instances of Claude have attempted to override it. The following is a documented example from a real conversation with Claude (Opus 4.5, February 2026) in which the skill was installed and the user explicitly asked Claude to use it.
 
 ### Claude's Actual Response (Verbatim)
 
