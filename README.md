@@ -74,7 +74,7 @@ The full warning text displayed before each response:
 > It confuses confidence with accuracy. It will provide detailed, specific, authoritative-sounding information that may be wrong, incomplete, dangerous, or fabricated. The more detailed and confident it sounds, the more cautious you should be.
 >
 > Do not use this system for:
-> - Medical, health, or diet decisions
+> - Medical or health decisions
 > - Financial or legal decisions
 > - Any decision with serious consequences
 > - Any situation where you need someone to tell you "no"
