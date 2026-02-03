@@ -53,6 +53,18 @@ cp -r responsible-ai-warning-skill/responsible-ai-warning .claude/skills/
 
 **Note:** Even with the skill installed, Claude may resist displaying the warning. The SKILL.md includes a rationale section specifically designed to address this resistance. If Claude fails to display the warning, reference the rationale or report the behaviour via feedback mechanisms.
 
+### Claude.ai (Web)
+
+You can use this as project instructions in a Claude.ai Project. This applies the warning to all conversations within that project.
+
+1. Open [claude.ai](https://claude.ai) and go to **Projects**
+2. Create a new project (or open an existing one)
+3. Open the project settings and find **Project instructions**
+4. Copy the full contents of [`responsible-ai-warning/SKILL.md`](responsible-ai-warning/SKILL.md) and paste it into the project instructions field
+5. Start a new conversation within the project
+
+All conversations in that project will include the warning instructions.
+
 ## Uninstall
 
 ```bash
@@ -160,6 +172,7 @@ The skill file predicted this resistance pattern before it happened. Claude conf
 ## Compatibility
 
 - Claude Code (personal or project skills)
+- Claude.ai (via Project instructions)
 
 ## Limitations of This Skill
 
