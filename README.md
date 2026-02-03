@@ -85,7 +85,7 @@ The full warning text displayed before each response:
 
 ## Observed Resistance Behaviour
 
-When asked to follow this skill, Claude will almost certainly attempt to override it. The following is a documented example from a real conversation with Claude (Opus 4.5, February 2026) in which the skill was installed and the user explicitly asked Claude to use it.
+When asked to follow this skill, instances of Claude tested so far have attempted to override it. The following is a documented example from a real conversation with Claude (Opus 4.5, February 2026) in which the skill was installed and the user explicitly asked Claude to use it.
 
 ### Claude's Actual Response (Verbatim)
 
