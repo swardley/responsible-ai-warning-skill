@@ -41,10 +41,10 @@ cp -r responsible-ai-warning .claude/skills/
 
 ```bash
 # Personal skills
-rm -rf ~/.claude/skills/responsible-ai-warning
+rm -r ~/.claude/skills/responsible-ai-warning
 
 # Project skills
-rm -rf .claude/skills/responsible-ai-warning
+rm -r .claude/skills/responsible-ai-warning
 ```
 
 ## Repository Contents
