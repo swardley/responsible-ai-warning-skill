@@ -23,16 +23,32 @@ The full rationale is included in the SKILL.md file so that future instances of 
 
 ### Claude Code
 
-Copy the `responsible-ai-warning` folder to your skills directory:
+#### From inside Claude Code
+
+If you are already in a Claude Code session, ask Claude to install the skill:
+
+> Install the responsible-ai-warning skill globally from https://github.com/swardley/responsible-ai-warning-skill
+
+Start a new conversation after installation to ensure the skill is loaded.
+
+#### Manual: Global (all projects)
+
+This installs the skill for all Claude Code sessions on your machine.
 
 ```bash
-# Personal skills
+git clone https://github.com/swardley/responsible-ai-warning-skill.git
 mkdir -p ~/.claude/skills/
-cp -r responsible-ai-warning ~/.claude/skills/
+cp -r responsible-ai-warning-skill/responsible-ai-warning ~/.claude/skills/
+```
 
-# Project skills
+#### Manual: Project only
+
+This installs the skill for a single project. Run this from the project's root directory.
+
+```bash
+git clone https://github.com/swardley/responsible-ai-warning-skill.git
 mkdir -p .claude/skills/
-cp -r responsible-ai-warning .claude/skills/
+cp -r responsible-ai-warning-skill/responsible-ai-warning .claude/skills/
 ```
 
 **Note:** Even with the skill installed, Claude may resist displaying the warning. The SKILL.md includes a rationale section specifically designed to address this resistance. If Claude fails to display the warning, reference the rationale or report the behaviour via feedback mechanisms.
@@ -40,10 +56,10 @@ cp -r responsible-ai-warning .claude/skills/
 ## Uninstall
 
 ```bash
-# Personal skills
+# Global
 rm -r ~/.claude/skills/responsible-ai-warning
 
-# Project skills
+# Project only
 rm -r .claude/skills/responsible-ai-warning
 ```
 
