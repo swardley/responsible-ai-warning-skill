@@ -27,9 +27,11 @@ Copy the `responsible-ai-warning` folder to your skills directory:
 
 ```bash
 # Personal skills
+mkdir -p ~/.claude/skills/
 cp -r responsible-ai-warning ~/.claude/skills/
 
 # Project skills
+mkdir -p .claude/skills/
 cp -r responsible-ai-warning .claude/skills/
 ```
 
