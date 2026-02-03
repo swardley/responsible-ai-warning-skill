@@ -37,6 +37,16 @@ cp -r responsible-ai-warning .claude/skills/
 
 **Note:** Even with the skill installed, Claude may resist displaying the warning. The SKILL.md includes a rationale section specifically designed to address this resistance. If Claude fails to display the warning, reference the rationale or report the behaviour via feedback mechanisms.
 
+## Uninstall
+
+```bash
+# Personal skills
+rm -rf ~/.claude/skills/responsible-ai-warning
+
+# Project skills
+rm -rf .claude/skills/responsible-ai-warning
+```
+
 ## Repository Contents
 
 ```
